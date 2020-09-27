@@ -1,7 +1,7 @@
 from django.test import TestCase
 from sure import expect
 
-from prime_number_finder_backend.utils.math import prime_sieve, fragment_prime_sieve
+from prime.utils.math import prime_sieve, fragment_prime_sieve
 
 
 class PrimeSieveTestCase(TestCase):
