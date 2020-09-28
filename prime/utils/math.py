@@ -1,25 +1,6 @@
 import math
 
 
-def prime_sieve(n):
-    if n <= 2:
-        return []
-
-    if n == 3:
-        return [2]
-
-    is_prime = [True] * n
-    is_prime[0] = False
-    is_prime[1] = False
-
-    for i in range(2, math.floor(math.sqrt(n)) + 1):
-        if is_prime[i]:
-            for j in range(i * i, n, i):
-                is_prime[j] = False
-
-    return [i for i, p in enumerate(is_prime) if p is True]
-
-
 def fragment_prime_sieve(n, pre_generated_primes=None):
     if n <= 2:
         return []
