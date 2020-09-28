@@ -1,0 +1,13 @@
+[run]
+branch = True
+source = ./
+omit =
+    */migrations/*
+    prime_number_finder_backend/wsgi.py
+    manage.py
+    blog/storages.py
+
+[report]
+show_missing = True
+exclude_lines =
+    if settings.DEBUG:

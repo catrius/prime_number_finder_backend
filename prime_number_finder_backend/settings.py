@@ -24,8 +24,6 @@ env = environ.Env(
     DEFAULT_FILE_STORAGE=(str, 'django.core.files.storage.FileSystemStorage'),
     STATICFILES_STORAGE=(str, 'django.contrib.staticfiles.storage.StaticFilesStorage'),
     STATIC_ROOT=(str, None),
-    MEDIA_ROOT=(str, ''),
-    MEDIA_URL=(str, ''),
 )
 
 # reading .env file
@@ -148,8 +146,6 @@ USE_TZ = True
 STATIC_ROOT = env('STATIC_ROOT')
 # This is required by django.contrib.staticfiles. In production, it is ignored by django-storage.
 STATIC_URL = '/static/'
-MEDIA_ROOT = env('MEDIA_ROOT')
-MEDIA_URL = env('MEDIA_URL')
 
 # A list of origins that are authorized to make cross-site HTTP requests
 # https://pypi.org/project/django-cors-headers/

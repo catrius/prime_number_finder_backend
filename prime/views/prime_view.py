@@ -9,6 +9,7 @@ from prime.models import Prime
 class PrimeView(APIView):
     def get(self, request):
         n = self.request.query_params.get('n', None)
-        if not n:
+        try:
+            return Response(Prime.previous_prime(int(n)), HTTP_200_OK)
+        except (ValueError, TypeError):
             raise NotFound()
-        return Response(Prime.previous_prime(int(n)), HTTP_200_OK)

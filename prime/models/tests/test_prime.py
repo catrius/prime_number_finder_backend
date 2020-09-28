@@ -47,5 +47,5 @@ class PrimeTestCase(TestCase):
         expect(Prime.previous_prime(1000000)).to.equal(999983)
         expect(Prime.objects.count()).to.equal(78498)
 
-        expect(Prime.previous_prime(10000000)).to.equal(9999991)
-        expect(Prime.objects.count()).to.equal(664579)
+        expect(Prime.previous_prime(2000000)).to.equal(1999993)
+        expect(Prime.objects.count()).to.equal(148933)

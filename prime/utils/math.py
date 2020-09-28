@@ -23,9 +23,4 @@ def fragment_prime_sieve(n, pre_generated_primes=None):
             for j in range(i * i, n, i):
                 is_prime[j - offset] = False
 
-
-    primes = [i + offset for i, p in enumerate(is_prime) if p is True]
-    if pre_generated_primes:
-        return primes
-    else:
-        return [2] + primes
+    return [i + offset for i, p in enumerate(is_prime) if p is True]

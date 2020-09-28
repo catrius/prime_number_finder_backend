@@ -1,4 +1,4 @@
-from django.db.models import Model, PositiveIntegerField, Max
+from django.db.models import Model, PositiveIntegerField
 
 from prime.utils.math import fragment_prime_sieve
 
