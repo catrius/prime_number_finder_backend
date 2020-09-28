@@ -9,7 +9,10 @@ class Prime(Model):
     @classmethod
     def largest_prime(cls):
         query = cls.objects.all().aggregate(Max('prime'))
-        return query['prime__max']
+        if query['prime__max']:
+            return query['prime__max']
+        Prime(prime=2).save()
+        return 2
 
     @classmethod
     def primes(cls):

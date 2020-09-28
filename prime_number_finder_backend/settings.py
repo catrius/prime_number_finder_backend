@@ -59,6 +59,7 @@ DJANGO_APPS = [
 ]
 
 LIBRARY_APPS = [
+    'rest_framework',
 ]
 
 LOCAL_APPS = [
@@ -153,13 +154,6 @@ MEDIA_URL = env('MEDIA_URL')
 # A list of origins that are authorized to make cross-site HTTP requests
 # https://pypi.org/project/django-cors-headers/
 CORS_ORIGIN_WHITELIST = env('CORS_ORIGIN_WHITELIST')
-
-# Custom Rest Framework pagination
-# https://www.django-rest-framework.org/api-guide/pagination/
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'blog.pagination.CountedPageNumberPagination',
-    'PAGE_SIZE': 12
-}
 
 # AWS
 AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
