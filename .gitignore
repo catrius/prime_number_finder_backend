@@ -4,3 +4,21 @@
 # Python
 *.pyc
 
+# Pyenv
+/.python-version
+
+# env
+.env
+.production.env
+
+#Django
+/media/
+/static/
+
+# Poetry
+*.egg-info/
+
+# Coverage
+/.coverage
+/htmlcov/
+/coverage.xml
