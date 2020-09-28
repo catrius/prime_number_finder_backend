@@ -25,6 +25,8 @@ class PrimeTestCase(TestCase):
         ])
 
     def test_previous_prime(self):
+        expect(Prime.previous_prime(3)).to.equal(2)
+
         expect(Prime.previous_prime(19)).to.equal(17)
         expect(Prime.previous_prime(2)).to.equal(None)
 
@@ -41,7 +43,9 @@ class PrimeTestCase(TestCase):
         expect(Prime.previous_prime(101)).to.equal(97)
         expect(Prime.objects.count()).to.equal(25)
 
+    def test_previous_prime_with_large_number(self):
         expect(Prime.previous_prime(1000000)).to.equal(999983)
+        expect(Prime.objects.count()).to.equal(78498)
 
-    def test_previous_prime_large_number(self):
-        expect(Prime.previous_prime_large_number(10000000)).to.equal(9999991)
+        expect(Prime.previous_prime(10000000)).to.equal(9999991)
+        expect(Prime.objects.count()).to.equal(664579)

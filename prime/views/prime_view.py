@@ -11,4 +11,4 @@ class PrimeView(APIView):
         n = self.request.query_params.get('n', None)
         if not n:
             raise NotFound()
-        return Response(Prime.previous_prime_large_number(int(n)), HTTP_200_OK)
+        return Response(Prime.previous_prime(int(n)), HTTP_200_OK)
