@@ -58,6 +58,7 @@ DJANGO_APPS = [
 
 LIBRARY_APPS = [
     'rest_framework',
+    'corsheaders',
 ]
 
 LOCAL_APPS = [

@@ -37,7 +37,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.4.3"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Code coverage measurement for Python"
 name = "coverage"
 optional = false
@@ -104,7 +104,7 @@ version = "3.11.1"
 django = ">=1.11"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby."
 name = "factory-boy"
 optional = false
@@ -119,7 +119,7 @@ dev = ["coverage", "django", "flake8", "isort", "pillow", "sqlalchemy", "mongoen
 doc = ["sphinx", "sphinx-rtd-theme"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Faker is a Python package that generates fake data for you."
 name = "faker"
 optional = false
@@ -325,7 +325,7 @@ python-versions = ">=3.5"
 version = "2.7.1"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Extensions to the standard Python datetime module"
 name = "python-dateutil"
 optional = false
@@ -344,7 +344,7 @@ python-versions = "*"
 version = "2020.1"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
@@ -372,7 +372,7 @@ mock = "*"
 six = "*"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "The most basic Text::Unidecode port"
 name = "text-unidecode"
 optional = false
@@ -404,7 +404,7 @@ python-versions = "*"
 version = "0.2.5"
 
 [metadata]
-content-hash = "f791c487b5499646ba913b558978e731ab3c98de131125f35dd9e485bd7590c6"
+content-hash = "a996b43d4eb554c6c75d5127b87e3b43465e77c645442ba1d7544cbe65123f88"
 lock-version = "1.0"
 python-versions = "^3.8"
 
